@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "微软雅黑", "Microsoft YaHei", sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* 顶部导航栏 */
+.header {
+    background-color: #ff5500;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 14px 30px;
+    box-shadow: 0 2px 8px rgba(255,85,0,0.3);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 40px;
+    letter-spacing: 1px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    font-size: 17px;
+}
+
+.nav li {
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: all 0.25s ease;
+}
+
+/* 导航悬停变色 */
+.nav li:hover {
+    background-color: #fff;
+    color: #ff5500;
+}
+
+/* 横幅区域 */
+.banner {
+    width: 100%;
+    height: 220px;
+    background-color: #f8f8f8;
+    text-align: center;
+    line-height: 220px;
+    font-size: 26px;
+    letter-spacing: 3px;
+    color: #333;
+}
+
+/* 分类整体容器 */
+.category {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* 分类卡片升级 */
+.item {
+    width: 31%;
+    min-width: 260px;
+    height: 210px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* 卡片悬停上浮效果 */
+.item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* 大尺寸优化图片 */
+.item img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    border: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.item p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #222;
+}
+
+/* 学号姓名 */
+.info {
+    text-align: center;
+    margin: 60px 0 40px;
+    font-size: 16px;
+    color: #666;
+}
